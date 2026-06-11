@@ -1,0 +1,46 @@
+// cal-ox4 버전 리소스 (Windows VERSIONINFO)
+//
+// 이 바이너리 이름만 여기서 지정한다. 버전 숫자는 src/version.txt, 나머지 필드는
+// lbx_version.h 의 매크로에서 파생한다. VS_VERSION_INFO 블록 자체는 이 rc 가 가진다
+// (VS 리소스 편집기 인식). VALUE 들은 매크로로 연결.
+#define LBX_MODULE_NAME "cal-ox4"
+#define LBX_PRODUCT_NAME "cal-flood"
+#define LBX_FILE_DESCRIPTION "cal-flood (ox4)"
+#include <windows.h>
+#include "../../../src/version.txt"
+#include "../../../lib/lbx/include/lbx_version.h"
+
+#ifdef _DEBUG
+#define LBX_VER_FILEFLAGS VS_FF_DEBUG
+#else
+#define LBX_VER_FILEFLAGS 0x0L
+#endif
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    VERSION_MAJOR,VERSION_MINOR,VERSION_PATCH,BUILD_NUMBER
+ PRODUCTVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_PATCH,BUILD_NUMBER
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      LBX_VER_FILEFLAGS
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       LBX_FILE_TYPE
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"        // 0409 = 영어(미국), 04b0 = 1200 = Unicode
+        BEGIN
+            VALUE "CompanyName",      LBX_COMPANY_NAME
+            VALUE "FileDescription",  LBX_FILE_DESCRIPTION
+            VALUE "FileVersion",      LBX_VER_STR
+            VALUE "InternalName",     LBX_INTERNAL_NAME
+            VALUE "OriginalFilename", LBX_INTERNAL_NAME
+            VALUE "ProductName",      LBX_PRODUCT_NAME
+            VALUE "ProductVersion",   LBX_VER_STR
+            VALUE "LegalCopyright",   LBX_LEGAL_COPYRIGHT
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

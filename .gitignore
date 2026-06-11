@@ -1,0 +1,92 @@
+﻿# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# VS Intermediate files
+*.exp
+*.pdb
+*.bsc
+*.user
+Win32
+x64
+.vs
+
+# C++ Builder files
+__history
+__recovery
+__astcache
+*.cbproj.local
+Win64
+
+# Doxygen files
+doc/html
+doc/latex
+
+# Cmake files
+build/cmake/*
+
+# make files
+build/linux/*
+!build/linux/Makefile
+
+# Backup files
+*.bak
+*.gz
+*.tar
+*.zip
+
+# Additional VS build artifacts
+*.ilk
+*.tlog
+*.log
+*.recipe
+*.idb
+*.lastbuildstate
+*FileListAbsolute.txt
+
+# Test app build directories
+test/*/Debug/
+test/*/Release/
+test/*/obj/
+
+# Compiled shaders (built from src/gfx/shaders/*.{vert,frag})
+*.spv
+
+# imgui runtime settings
+imgui.ini
+
+# Claude Code / oh-my-claudecode 작업 디렉토리
+.claude/
+.omc/
+
+# Visual Studio 리소스 편집기 부산물
+*.aps

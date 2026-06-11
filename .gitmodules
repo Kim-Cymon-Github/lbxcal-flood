@@ -1,0 +1,11 @@
+[submodule "lib/lbx"]
+	path = lib/lbx
+	url = git@github.com:litbig-git/lbx.git
+	ignore = dirty
+
+[submodule "lib/imgui"]
+	path = lib/imgui
+	url = git@github.com:ocornut/imgui.git
+[submodule "lib/cminpack"]
+	path = lib/cminpack
+	url = https://github.com/devernay/cminpack.git
