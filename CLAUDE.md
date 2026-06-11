@@ -1,6 +1,6 @@
 # cal-flood 작업 규칙
 
-설계/scope는 [Cal 모듈 플러그인 설계 문서](../../lbsvm-core/doc/Cal_Module_Plugin_Design.md) 참조 (구조·범위·소스 of truth·HKMC 변종 전부).
+설계/scope는 [Cal 모듈 플러그인 설계 문서](doc/Cal_Module_Plugin_Design.md) 참조 (구조·범위·소스 of truth·HKMC 변종 전부).
 
 ## 파일 인코딩
 
